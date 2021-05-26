@@ -1,0 +1,82 @@
+{{define "main"}}
+<style type="text/css" media="screen">
+ a{
+   color: white;
+ }
+</style>
+
+<div class="bg-dark text-light px-5 justify-content-center" style="display:flex; min-height: 60vh;align-items:center;">
+  <div style="display:flex;flex-direction:column;">
+    <h1>Welcome to Nexus SJCET 👋</h1>
+    <p>Nexus is a student driven free software and hardware club that is free as in free speech, not free Beer.</p>
+    <div>
+      <button type="button" onclick="location.href='{{.Site.BaseURL}}about'"
+              class="btn btn-outline-light">About US</button>
+      <button type="button" onclick="location.href='{{.Site.BaseURL}}post'"
+              class="btn btn-outline-light">Blog</button>
+    </div>
+  </div>
+</div>
+<div class="p-5" style="display:flex; flex-wrap: wrap; align-items: center;">
+  <div class="clearfix px-sm-5">
+    <img src='{{ "img/nasa.jpg" | absURL }}' class="col-md-6 rounded float-md-start px-md-5 mb-3 img-fluid float-sm-start ms-md-3" alt="Libremon" />
+    <h2 class="card-title">What is Nexus?</h2>
+    <h3 class="card-subtitle mb-2 text-muted">ശരിക്കും എന്താണ് ഈ സംഭവം?</h3>
+    <p class="card-text">Nexus, SJCET was formed on 12 September, 2018 by a group of students to support and organize Free/Libre and Open-Source Software and Hardware related activities in SJCET, Palai.
+      We believe in great ideas, aims to create awareness on software and hardware freedom and to promote its usage among the student community through both technical and non-technical programmes. It is a unique platform for students and technologists to share their technical and professional knowledge for the benefit of the society.
+    </p>
+    </p>
+  </div>
+</div>
+<div class="container px-4 pb-5" id="icon-grid">
+  <h3 class="pb-2 border-bottom">We Support:</h3>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+    <div class="col d-flex align-items-start">
+      <i class=" px-3 fas fa-volume-up" style="font-size: 28px"></i>
+      <div>
+        <h4 class="fw-bold mb-0">The freedom of</h4>
+        <p>Speech, Press, Association on the Internet</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <i class="px-3 fas fa-file-code" style="font-size: 28px"></i>
+      <div>
+        <h4 class="fw-bold mb-0">The Right to </h4>
+        <p>use, study, copy, modify, and redistribute computer programs</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <i class="px-3 fas fa-microchip" style="font-size: 28px"></i>
+      <div>
+        <h4 class="fw-bold mb-0">The Right to</h4>
+        <p>study, modify, distribute, make, and sell the design or hardware based on that design.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <i class="px-3 fas fa-tools" style="font-size: 28px"></i>
+      <div>
+        <h4 class="fw-bold mb-0">The Right to</h4>
+        <p>write software and engineer hardware unimpeded by private monopolies</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-dark text-light" id="icon-grid">
+  <div class="p-5">
+    <h2 class="mb-5 text-center">Recent Blogs</h2>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      {{ range first 3 (where site.RegularPages "Type" "in" site.Params.mainSections).ByDate.Reverse }}
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-body bg-dark">
+            <h3><a class="card-title" href="{{.RelPermalink}}">{{.Title}}</a><br></h3>
+            <small class="text-muted">{{ .PublishDate.Format "January 2, 2006" }}</small>
+            <p>{{ .Summary }}</p>
+          </div>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</div>
+{{end}}
