@@ -1,0 +1,8 @@
+baseURL = "https://thenexusproject.gitlab.io/"
+languageCode = "en-us"
+title = "Nexus SJCET"
+
+[params.main]
+  enabled = true
+  description = "Free Software and Hardware community SJCET."
+  img = "https://avatars.githubusercontent.com/u/44492769"
