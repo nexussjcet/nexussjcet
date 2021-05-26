@@ -1,8 +1,10 @@
 ---
 title: "Open Data Day, 2019"
 date: 2021-05-26T12:07:00+05:30
-author: "Anandu R"
+author: "true"
+authorName: "Anandu R"
 authorUrl: "https://anandur32.github.io/Resume32R/"
+tags: ["Open Source","Open Data Day","Mapathon"]
 url: open-data-day
 draft: false
 ---

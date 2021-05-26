@@ -1,8 +1,10 @@
 ---
 title: "Foss Young Professional Meet, 2019"
 date: 2021-05-26T12:10:00+05:30
-author: "Anandu R"
+author: "true"
+authorName: "Anandu R"
 authorUrl: "https://anandur32.github.io/Resume32R/"
+tags: ["FOSS","Software development","FYPM"]
 url: fypm
 draft: false
 ---
