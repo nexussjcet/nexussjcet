@@ -1,6 +1,6 @@
 ---
 title: "Foss Young Professional Meet, 2019"
-date: 2021-05-26T12:10:00+05:30
+date: 2019-01-20T12:10:00+05:30
 author: "true"
 authorName: "Anandu R"
 authorUrl: "https://anandur32.github.io/Resume32R/"
