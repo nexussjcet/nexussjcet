@@ -4,7 +4,7 @@ date: 2019-03-02T12:07:00+05:30
 author: "true"
 authorName: "Anandu R"
 authorUrl: "https://anandur32.github.io/Resume32R/"
-tags: ["Open Data Day","Mapathon"]
+tags: ["Open Source","Open Data Day","Mapathon","FOSS"]
 url: open-data-day
 draft: false
 ---

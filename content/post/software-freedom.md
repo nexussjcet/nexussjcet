@@ -4,7 +4,7 @@ date: 2018-09-15T12:11:00+05:30
 author: "true"
 authorName: "Anandu R"
 authorUrl: "https://anandur32.github.io/Resume32R/"
-tags: ["Software Freedom","fsf","Free Software"]
+tags: ["Software Freedom","fsf","Free Software","FOSS"]
 url: sfd2018
 draft: false
 ---
@@ -21,4 +21,4 @@ According to the Open Source Initiative (OSI), Software freedom is only complete
 ## Purpose
 It is quite an important day for those of us who practice free and open source development to have ability to use the programs we own without any restrictions, legally. Without this freedom we are just under the shackles of Tech giants abusing their power and imposing their vision onto masses.
 
-Therefore to celebrate this day and to educate the students at our college we had [Abraham Raji](https://abrahamraji.in) talk about the beginning of Free Software Movement through the works of Richard Stallman the impact it has on the software development world today.
+Therefore to celebrate this day and to educate the students at our college we had [Abraham Raji](https://abrahamraji.in) talk about the beginnings of Free and Open Source Software initiative through the works of Richard Stallman the impact it has on the software development world today.
