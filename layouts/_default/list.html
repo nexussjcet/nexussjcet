@@ -1,9 +1,10 @@
 {{define "main"}}
 <main id="main" class="py-5" style="display:flex;">
   <div class="contaianer p-md-5" style="margin:auto;">
-      <div class="container-md">
+      <div class="container-md ">
     <!-- Ranges through content/posts/*.md -->
-            <h1 class="fw-bold text-dark" >{{.Title}}</h1>
+        <br>
+            <h1 class="fw-p-5 bold text-dark" >{{.Title}}</h1>
     {{ range .Pages }}
         <h3><a class="fw-bold text-dark" href="{{.Permalink}}">{{.Title}}</a></h3>
         <h6>{{ $author := "false" }}
